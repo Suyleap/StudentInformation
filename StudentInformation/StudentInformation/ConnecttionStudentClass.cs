@@ -25,9 +25,21 @@ namespace StudentInformation
         public void connection()
         { 
             CON=new System.Data.SqlClient.SqlConnection();
-            SQL = "Server=SHIWU;Database=Student;User ID=ShiwuNi;Password=ShiwuNi016851518";
-            CON.ConnectionString = SQL;
-            CON.Open();
+            String LeapSQL = "Server=SHIWU;Database=Student;User ID=ShiwuNi;Password=ShiwuNi016851518";
+            String DySQL = "Server=ADMINRG-6O4VBOP\\BONGDYSERVER;Database=StudentInfo;User ID=sa;Password=Pl3chbataii";
+
+            try
+            {
+                CON.ConnectionString = LeapSQL;
+                CON.Open();
+                SQL = LeapSQL;
+            }
+            catch
+            {
+                CON.ConnectionString = DySQL;
+                CON.Open();
+                SQL = DySQL;
+            }
             Console.WriteLine("connection open");
         }
 

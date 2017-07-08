@@ -1,14 +1,9 @@
-C:\Users\Shiwu\Desktop\StudentInformation\StudentInformation\bin\Debug\StudentInformation.exe.config
-<<<<<<< HEAD
-D:\HospitalProject\StudentInformation\StudentInformation\StudentInformation\bin\Debug\StudentInformation.exe.config
-=======
-E:\Work\StudentInformation\StudentInformation\StudentInformation\bin\Debug\StudentInformation.exe.config
->>>>>>> 36f1ed6a3284056e57dbc438fdb2afea5f28baaa
-D:\HospitalProject\StudentInformation\StudentInformation\StudentInformation\bin\Debug\StudentInformation.exe
-D:\HospitalProject\StudentInformation\StudentInformation\StudentInformation\bin\Debug\StudentInformation.pdb
-D:\HospitalProject\StudentInformation\StudentInformation\StudentInformation\obj\Debug\StudentInformation.csprojResolveAssemblyReference.cache
-D:\HospitalProject\StudentInformation\StudentInformation\StudentInformation\obj\Debug\StudentInformation.Form1.resources
-D:\HospitalProject\StudentInformation\StudentInformation\StudentInformation\obj\Debug\StudentInformation.Properties.Resources.resources
-D:\HospitalProject\StudentInformation\StudentInformation\StudentInformation\obj\Debug\StudentInformation.csproj.GenerateResource.Cache
-D:\HospitalProject\StudentInformation\StudentInformation\StudentInformation\obj\Debug\StudentInformation.exe
-D:\HospitalProject\StudentInformation\StudentInformation\StudentInformation\obj\Debug\StudentInformation.pdb
+E:\Work\TestWork\StudentInformation\StudentInformation\StudentInformation\bin\Debug\StudentInformation.exe.config
+E:\Work\TestWork\StudentInformation\StudentInformation\StudentInformation\bin\Debug\StudentInformation.exe
+E:\Work\TestWork\StudentInformation\StudentInformation\StudentInformation\bin\Debug\StudentInformation.pdb
+E:\Work\TestWork\StudentInformation\StudentInformation\StudentInformation\obj\Debug\StudentInformation.csprojResolveAssemblyReference.cache
+E:\Work\TestWork\StudentInformation\StudentInformation\StudentInformation\obj\Debug\StudentInformation.Form1.resources
+E:\Work\TestWork\StudentInformation\StudentInformation\StudentInformation\obj\Debug\StudentInformation.Properties.Resources.resources
+E:\Work\TestWork\StudentInformation\StudentInformation\StudentInformation\obj\Debug\StudentInformation.csproj.GenerateResource.Cache
+E:\Work\TestWork\StudentInformation\StudentInformation\StudentInformation\obj\Debug\StudentInformation.exe
+E:\Work\TestWork\StudentInformation\StudentInformation\StudentInformation\obj\Debug\StudentInformation.pdb
