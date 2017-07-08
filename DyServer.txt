@@ -1,1 +1,19 @@
 "Server=ADMINRG-6O4VBOP\BONGDYSERVER;Database=Students;User ID=sa;Password=Pl3chbataii"
+
+
+===========================================
+
+create a table: 
+
+
+
+create table tbStuInfo
+(
+	ID nvarchar(30) not null,
+	Name nvarchar(60) not null,
+	Age nvarchar(2) not null,
+	Address nvarchar not null
+)
+GO
+
+============================
