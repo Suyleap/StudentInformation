@@ -24,7 +24,7 @@ namespace StudentInformation
 
         public void connection()
         { 
-
+            SQL="";
         }
 
         public void UseDataBase(string sql)
