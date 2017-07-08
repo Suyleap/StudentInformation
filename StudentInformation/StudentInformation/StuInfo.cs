@@ -9,6 +9,6 @@ namespace StudentInformation
 {
     class StuInfo
     {
-
+   
     }
 }
