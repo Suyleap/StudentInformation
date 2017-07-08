@@ -12,7 +12,7 @@ namespace StudentInformation
 {
     public partial class Form1 : Form
     {
-        private new  ConnecttionStudentClass con;
+        private ConnecttionStudentClass con;
         public Form1()
         {
             InitializeComponent();
@@ -20,12 +20,17 @@ namespace StudentInformation
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            try {
+            try
+            {
+                con = new ConnecttionStudentClass();
                 con.connection();
+                MessageBox.Show("connection open");
             }
-            catch {
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
             }
-           
+       
         }
     }
 }

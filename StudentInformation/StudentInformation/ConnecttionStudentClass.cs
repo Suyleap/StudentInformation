@@ -28,14 +28,25 @@ namespace StudentInformation
             SQL = "Server=SHIWU;Database=Student;User ID=ShiwuNi;Password=ShiwuNi016851518";
             CON.ConnectionString = SQL;
             CON.Open();
-            
+            Console.WriteLine("connection open");
         }
 
-        public void UseDataBase(string sql)
+        public object  UseDataBase(string sql)
         {
-            this.SQLs = sql;
-
+            this.connection();
+            SQLs = sql;
+            CMD = new SqlCommand(SQL);
+            CMD.ExecuteNonQuery();
+            return CMD;
         }
 
+        public object  UseDatabaseToRead(string sql)
+        {
+            this.connection();
+            SQL = sql;
+            CMD=new SqlCommand (SQL );
+            READER = CMD.ExecuteReader();
+            return READER;
+        }
     }
 }
