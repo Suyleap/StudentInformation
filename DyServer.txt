@@ -1,0 +1,1 @@
+"Server=ADMINRG-6O4VBOP\BONGDYSERVER;Database=Students;User ID=sa;Password=Pl3chbataii"
