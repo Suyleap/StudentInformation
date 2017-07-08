@@ -1,2 +1,6 @@
 C:\Users\Shiwu\Desktop\StudentInformation\StudentInformation\bin\Debug\StudentInformation.exe.config
+<<<<<<< HEAD
 D:\HospitalProject\StudentInformation\StudentInformation\StudentInformation\bin\Debug\StudentInformation.exe.config
+=======
+E:\Work\StudentInformation\StudentInformation\StudentInformation\bin\Debug\StudentInformation.exe.config
+>>>>>>> 36f1ed6a3284056e57dbc438fdb2afea5f28baaa
