@@ -168,6 +168,7 @@
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Student Information";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudent)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

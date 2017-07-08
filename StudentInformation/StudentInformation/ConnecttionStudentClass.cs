@@ -24,7 +24,11 @@ namespace StudentInformation
 
         public void connection()
         { 
-            SQL="";
+            CON=new System.Data.SqlClient.SqlConnection();
+            SQL = "Server=SHIWU;Database=Student;User ID=ShiwuNi;Password=ShiwuNi016851518";
+            CON.ConnectionString = SQL;
+            CON.Open();
+            
         }
 
         public void UseDataBase(string sql)
