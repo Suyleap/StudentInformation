@@ -60,6 +60,7 @@
             this.btnShow.TabIndex = 1;
             this.btnShow.Text = "SHOW";
             this.btnShow.UseVisualStyleBackColor = true;
+            this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
             // 
             // label1
             // 

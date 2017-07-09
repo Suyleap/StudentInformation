@@ -12,8 +12,8 @@ namespace StudentInformation
 {
     public partial class Form1 : Form
     {
-       
-        private ConnecttionStudentClass con;
+
+        private StuInfo stu = new StuInfo();
         public Form1()
         {
             InitializeComponent();
@@ -21,17 +21,14 @@ namespace StudentInformation
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            try
-            {
-                con = new ConnecttionStudentClass();
-                con.connection();
-                MessageBox.Show("connection open");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex);
-            }
-       
+                dgvStudent.DataSource = stu.ShowStudentInfor();
+                this.Refresh();
+        }
+
+        private void btnShow_Click(object sender, EventArgs e)
+        {
+            dgvStudent.DataSource = stu.ShowStudentInfor();
+            this.Refresh();
         }
     }
 }
