@@ -12,6 +12,7 @@ namespace StudentInformation
 {
     public partial class Form1 : Form
     {
+       
         private ConnecttionStudentClass con;
         public Form1()
         {
