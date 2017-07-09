@@ -35,6 +35,17 @@ namespace StudentInformation
         {
             stu.InsertData(txtID.Text, txtName.Text, Convert.ToInt16( txtAge.Text), txtAddress.Text);
             this.Refresh();
+            btnShow.PerformClick();
+            this.Refresh();
+            Clear();
+        }
+        private void Clear()
+        {
+            txtName.Text = "";
+            txtID.Text = "";
+            txtAge.Text = "";
+            txtAddress.Text = "";
+            txtID.Focus();
         }
     }
 }

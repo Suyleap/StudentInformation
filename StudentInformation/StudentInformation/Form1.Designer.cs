@@ -48,7 +48,7 @@
             this.btnInsert.Location = new System.Drawing.Point(320, 279);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(102, 45);
-            this.btnInsert.TabIndex = 0;
+            this.btnInsert.TabIndex = 5;
             this.btnInsert.Text = "INSERT";
             this.btnInsert.UseVisualStyleBackColor = true;
             this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
@@ -58,7 +58,7 @@
             this.btnShow.Location = new System.Drawing.Point(488, 279);
             this.btnShow.Name = "btnShow";
             this.btnShow.Size = new System.Drawing.Size(102, 45);
-            this.btnShow.TabIndex = 1;
+            this.btnShow.TabIndex = 6;
             this.btnShow.Text = "SHOW";
             this.btnShow.UseVisualStyleBackColor = true;
             this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
@@ -79,7 +79,7 @@
             this.txtID.Multiline = true;
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(197, 26);
-            this.txtID.TabIndex = 3;
+            this.txtID.TabIndex = 1;
             // 
             // dgvStudent
             // 
@@ -131,7 +131,7 @@
             this.txtName.Multiline = true;
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(197, 26);
-            this.txtName.TabIndex = 9;
+            this.txtName.TabIndex = 2;
             // 
             // txtAge
             // 
@@ -139,7 +139,7 @@
             this.txtAge.Multiline = true;
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(197, 26);
-            this.txtAge.TabIndex = 10;
+            this.txtAge.TabIndex = 3;
             // 
             // txtAddress
             // 
@@ -147,7 +147,7 @@
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(197, 78);
-            this.txtAddress.TabIndex = 11;
+            this.txtAddress.TabIndex = 4;
             // 
             // Form1
             // 

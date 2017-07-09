@@ -29,13 +29,13 @@ namespace StudentInformation
             try
             {
                 CON = new System.Data.SqlClient.SqlConnection();
-                String LeapSQL = "Server=SHIWU;Database=Student;User ID=ShiwuNi;Password=ShiwuNi016851518";
+                String LeapSQL = "Server=SHIWU\\SHIWUNI;Database=Student;User ID=sa;Password=ShiwuNi016851518";
                 String DySQL = "Server=ADMINRG-6O4VBOP\\BONG_DY;Database=StudentInfo;User ID=sa;Password=Pl3chbataii";
                 try
                 {
                     CON.ConnectionString = LeapSQL;
                     CON.Open();
-                    MessageBox.Show(LeapSQL);
+                 //   MessageBox.Show(LeapSQL);
                 }
                 catch
                 {
@@ -43,7 +43,7 @@ namespace StudentInformation
                   
                     CON.ConnectionString = DySQL;
                     CON.Open();
-                    MessageBox.Show(DySQL);
+                    //MessageBox.Show(DySQL);
                 }
             }
             catch (Exception ex)
@@ -51,7 +51,7 @@ namespace StudentInformation
                 MessageBox.Show(ex.Message);
             }
 
-            MessageBox.Show("Con is open");
+           // MessageBox.Show("Con is open");
         }
 
         public object  UseDataBase(string sql)
