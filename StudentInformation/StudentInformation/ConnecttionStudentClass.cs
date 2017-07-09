@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+
 namespace StudentInformation
 {
     class ConnecttionStudentClass
@@ -22,30 +23,52 @@ namespace StudentInformation
             set { SQL = value; }
         }
 
-        public void connection()
-        { 
-            CON=new System.Data.SqlClient.SqlConnection();
-            SQL = "Server=SHIWU;Database=Student;User ID=ShiwuNi;Password=ShiwuNi016851518";
-            CON.ConnectionString = SQL;
-            CON.Open();
-            Console.WriteLine("connection open");
+        public void   connection() 
+        {
+            try
+            {
+                CON = new System.Data.SqlClient.SqlConnection();
+                SQL = "Server=SHIWU;Database=Student;User ID=ShiwuNi;Password=ShiwuNi016851518";
+                CON.ConnectionString = SQL;
+                CON.Open();
+                Console.WriteLine("connection open");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
         public object  UseDataBase(string sql)
         {
-            this.connection();
-            SQLs = sql;
-            CMD = new SqlCommand(SQL);
-            CMD.ExecuteNonQuery();
+            try
+            {
+                connection();
+                SQLs = sql;
+                CMD = new SqlCommand(SQLs);
+                CMD.ExecuteNonQuery();
+               
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             return CMD;
         }
 
         public object  UseDatabaseToRead(string sql)
         {
-            this.connection();
-            SQL = sql;
-            CMD=new SqlCommand (SQL );
-            READER = CMD.ExecuteReader();
+            try
+            {
+                connection();
+                SQLs = sql;
+                CMD = new SqlCommand(SQLs);
+                READER = CMD.ExecuteReader();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             return READER;
         }
     }
