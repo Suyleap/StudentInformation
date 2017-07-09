@@ -59,7 +59,7 @@ namespace StudentInformation
             {
                 con.SQLs = "Select * from Student";
                 con.UseDatabaseToRead(con.SQLs);
-                while ( con.READER.Read() )
+                while  (con.READER.Read() )
                 {
                     stu = new StuInfo(con.READER.GetString(0), con.READER.GetString(1), con.READER.GetInt16(2), con.READER.GetString(3));
                     stus.Add(stu);

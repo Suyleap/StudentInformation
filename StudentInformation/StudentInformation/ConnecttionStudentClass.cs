@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace StudentInformation
 {
@@ -34,21 +35,21 @@ namespace StudentInformation
                 {
                     CON.ConnectionString = LeapSQL;
                     CON.Open();
-                    Console.WriteLine(LeapSQL);
+                    MessageBox.Show(LeapSQL);
                 }
                 catch
                 {
                     CON.ConnectionString = DySQL;
                     CON.Open();
-                    Console.WriteLine(DySQL);
+                    MessageBox.Show(DySQL);
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                MessageBox.Show(ex.Message);
             }
-           
-            Console.WriteLine("connection open");
+
+            MessageBox.Show("Con is open");
         }
 
         public object  UseDataBase(string sql)
@@ -62,7 +63,7 @@ namespace StudentInformation
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                MessageBox.Show(ex.Message);
             }
             return CMD;
         }
@@ -78,7 +79,7 @@ namespace StudentInformation
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                MessageBox.Show (ex.Message);
             }
             return READER;
         }
