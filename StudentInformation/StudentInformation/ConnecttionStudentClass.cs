@@ -30,7 +30,7 @@ namespace StudentInformation
             {
                 CON = new System.Data.SqlClient.SqlConnection();
                 String LeapSQL = "Server=SHIWU;Database=Student;User ID=ShiwuNi;Password=ShiwuNi016851518";
-                String DySQL = "Server=ADMINRG-6O4VBOP\\BONGDYSERVER;Database=StudentInfo;User ID=sa;Password=Pl3chbataii";
+                String DySQL = "Server=ADMINRG-6O4VBOP\\BONG_DY;Database=StudentInfo;User ID=sa;Password=Pl3chbataii";
                 try
                 {
                     CON.ConnectionString = LeapSQL;
@@ -39,6 +39,8 @@ namespace StudentInformation
                 }
                 catch
                 {
+                    
+                  
                     CON.ConnectionString = DySQL;
                     CON.Open();
                     MessageBox.Show(DySQL);

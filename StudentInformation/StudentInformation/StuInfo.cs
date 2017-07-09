@@ -57,11 +57,17 @@ namespace StudentInformation
             List<StuInfo> stus =new List<StuInfo>();
             try
             {
-                con.SQLs = "Select * from Student";
+                con.SQLs = "SELECT * FROM tbStuInfo";
                 con.UseDatabaseToRead(con.SQLs);
                 while  (con.READER.Read() )
                 {
-                    stu = new StuInfo(con.READER.GetString(0), con.READER.GetString(1), con.READER.GetInt16(2), con.READER.GetString(3));
+                    //stu = new StuInfo(con.READER.GetString(0), con.READER.GetString(1), con.READER.GetInt16(2), con.READER.GetString(3));
+                   // stu = new StuInfo(con.READER.GetValue(0).ToString(), con.READER.GetValue(1).ToString(), con.READER.GetValue(2).ToString(), con.READER.GetValue(3).ToString());
+                    ID = con.READER.GetValue(0).ToString();
+                    NAME = con.READER.GetValue(1).ToString();
+                    AGE =Convert.ToInt16 ( con.READER.GetValue(2));
+                    ADDRESS = con.READER.GetValue(3).ToString();
+                    stu = new StuInfo(ID, NAME, AGE, ADDRESS);
                     stus.Add(stu);
                     bs.DataSource = stus;
                 }
