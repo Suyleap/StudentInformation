@@ -61,8 +61,6 @@ namespace StudentInformation
                 con.UseDatabaseToRead(con.SQLs);
                 while  (con.READER.Read() )
                 {
-                    //stu = new StuInfo(con.READER.GetString(0), con.READER.GetString(1), con.READER.GetInt16(2), con.READER.GetString(3));
-                   // stu = new StuInfo(con.READER.GetValue(0).ToString(), con.READER.GetValue(1).ToString(), con.READER.GetValue(2).ToString(), con.READER.GetValue(3).ToString());
                     ID = con.READER.GetValue(0).ToString();
                     NAME = con.READER.GetValue(1).ToString();
                     AGE =Convert.ToInt16 ( con.READER.GetValue(2));
@@ -71,12 +69,26 @@ namespace StudentInformation
                     stus.Add(stu);
                     bs.DataSource = stus;
                 }
+                con.CloseConnection();
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                MessageBox.Show(ex.Message);
             }
             return bs;
+        }
+        public void InsertData(string id,string name,int age,string address)
+        {
+            try
+            {
+                con.SQLs = "Insert into tbStuInfo values('" + id.ToString() + "','" + name.ToString() + "'," + Convert.ToInt16(age) + ",'" + address.ToString() + "')";
+                con.UseDataBase(con.SQLs);
+                con.CloseConnection();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

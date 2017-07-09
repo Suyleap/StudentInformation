@@ -62,12 +62,14 @@ namespace StudentInformation
                 SQLs = sql;
                 CMD = new SqlCommand(SQLs,CON);
                 CMD.ExecuteNonQuery();
+               
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
             return CMD;
+
         }
 
         public object  UseDatabaseToRead(string sql)
@@ -78,12 +80,17 @@ namespace StudentInformation
                 SQLs = sql;
                 CMD = new SqlCommand(SQLs,CON);
                 READER = CMD.ExecuteReader();
+                
             }
             catch (Exception ex)
             {
                 MessageBox.Show (ex.Message);
             }
             return READER;
+        }
+        public void CloseConnection()
+        {
+            CON.Close();
         }
     }
 }

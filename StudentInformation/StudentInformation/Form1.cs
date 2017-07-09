@@ -30,5 +30,11 @@ namespace StudentInformation
             dgvStudent.DataSource = stu.ShowStudentInfor();
             this.Refresh();
         }
+
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+            stu.InsertData(txtID.Text, txtName.Text, Convert.ToInt16( txtAge.Text), txtAddress.Text);
+            this.Refresh();
+        }
     }
 }
