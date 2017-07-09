@@ -57,7 +57,7 @@ namespace StudentInformation
             {
                 connection();
                 SQLs = sql;
-                CMD = new SqlCommand(SQLs);
+                CMD = new SqlCommand(SQLs,CON);
                 CMD.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -73,7 +73,7 @@ namespace StudentInformation
             {
                 connection();
                 SQLs = sql;
-                CMD = new SqlCommand(SQLs);
+                CMD = new SqlCommand(SQLs,CON);
                 READER = CMD.ExecuteReader();
             }
             catch (Exception ex)

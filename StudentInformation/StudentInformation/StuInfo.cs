@@ -11,7 +11,7 @@ namespace StudentInformation
     class StuInfo
     {
   
-        private ConnecttionStudentClass con;
+        private ConnecttionStudentClass con =new ConnecttionStudentClass ();
         public string ID,NAME,ADDRESS;
         public int AGE;
 
